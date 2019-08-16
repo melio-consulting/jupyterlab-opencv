@@ -4,7 +4,7 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    image: merelda/open-cv:latest
+    image: melio-consulting/jupyterlab-opencv:latest
     environment:
       JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64/
     volumes:

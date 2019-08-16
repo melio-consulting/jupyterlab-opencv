@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     curl
 
 WORKDIR /app
-RUN pip install python-dotenv pyodbc openpyxl opencv-python
+RUN pip install python-dotenv openpyxl opencv-python
 
 RUN jupyter labextension install jupyterlab_vim && \
     jupyter labextension install @jupyterlab/toc && \
