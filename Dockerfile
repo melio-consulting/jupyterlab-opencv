@@ -12,7 +12,6 @@ RUN apt-get update && apt-get install -y --fix-missing \
     gfortran \
     graphicsmagick \
     libgraphicsmagick1-dev \
-    libatlas-dev \
     libavcodec-dev \
     libavformat-dev \
     libgtk2.0-dev \
