@@ -3,7 +3,7 @@ LABEL maintainer='Merelda Wu'
 
 USER root
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --fix-missing \
     vim \
     openjdk-11-jdk \
     curl \
