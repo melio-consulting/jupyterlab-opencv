@@ -29,7 +29,7 @@ RUN cd ~ && \
     python setup.py install --yes USE_AVX_INSTRUCTIONS
 
 WORKDIR /app
-RUN pip install python-dotenv openpyxl opencv-python
+RUN pip install python-dotenv openpyxl opencv-python face_recognition
 
 RUN jupyter labextension install jupyterlab_vim && \
     jupyter labextension install @jupyterlab/toc && \
