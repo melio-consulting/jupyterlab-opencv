@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook:17aba6048f44
+FROM gcr.io/kubeflow-images-public/tensorflow-1.13.1-notebook-cpu:v-base-08f3cbc-1166369568336121856
 LABEL maintainer='Merelda Wu'
 
 USER root
