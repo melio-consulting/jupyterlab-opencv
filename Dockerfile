@@ -30,14 +30,13 @@ RUN cd ~ && \
 
 WORKDIR /app
 RUN pip install --upgrade pip
-RUN pip install python-dotenv openpyxl opencv-python face_recognition 
+RUN pip install python-dotenv openpyxl opencv-python face_recognition
 
 RUN conda install nodejs
 
 RUN jupyter labextension install jupyterlab_vim && \
-    jupyter labextension install @jupyterlab/toc && \
-    jupyter labextension install @lckr/jupyterlab_variableinspector && \
-    jupyter labextension install @jupyterlab/plotly-extension
+    jupyter labextension install @jupyterlab/toc &&
+    jupyter labextension install @lckr/jupyterlab_variableinspector
 
 ENV NB_PREFIX /
 
