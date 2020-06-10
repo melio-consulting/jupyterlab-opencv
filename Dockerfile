@@ -1,4 +1,4 @@
-FROM gcr.io/kubeflow-images-public/tensorflow-2.0.0a-notebook-cpu:v0.5.0
+FROM gcr.io/kubeflow-images-public/tensorflow-2.1.0-notebook-cpu:1.0.0
 LABEL maintainer='Merelda Wu'
 
 USER root
