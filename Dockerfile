@@ -32,7 +32,7 @@ WORKDIR /app
 RUN pip install --upgrade pip
 RUN pip install python-dotenv openpyxl opencv-python face_recognition
 
-RUN conda install nodejs
+# RUN conda install nodejs
 
 RUN jupyter labextension install jupyterlab_vim && \
     jupyter labextension install @jupyterlab/toc && \
