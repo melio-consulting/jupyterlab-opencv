@@ -30,13 +30,14 @@ RUN cd ~ && \
 
 WORKDIR /app
 RUN pip install --upgrade pip
-RUN pip install python-dotenv openpyxl opencv-python face_recognition
+RUN pip install python-dotenv openpyxl opencv-python face_recognition kubeflow-kale
 
 # RUN conda install nodejs
 
 RUN jupyter labextension install jupyterlab_vim && \
     jupyter labextension install @jupyterlab/toc && \
-    jupyter labextension install @lckr/jupyterlab_variableinspector
+    jupyter labextension install @lckr/jupyterlab_variableinspector && \
+    jupyter labextension install kubeflow-kale-labextension
 
 ENV NB_PREFIX /
 
